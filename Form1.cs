@@ -16,10 +16,12 @@ namespace modbus
     public partial class Form1 : Form
     {
         private Socket socket;
+        Modbus modbus;
 
         public Form1()
         {
             InitializeComponent();
+            modbus = new Modbus();
         }
 
         private void button1_Click(object sender, EventArgs e)
